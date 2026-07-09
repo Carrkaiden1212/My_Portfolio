@@ -1,0 +1,35 @@
+{
+  "name": "music-bot",
+  "version": "1.0.0",
+  "description": "Single-guild Discord music bot built for portfolio",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "uc": "node uc.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "discord",
+    "music-bot",
+    "discord.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/voice": "^0.19.2",
+    "discord.js": "^14.26.4",
+    "dotenv": "^17.4.2",
+    "libsodium-wrappers": "^0.8.4",
+    "opusscript": "^0.0.8",
+    "play-dl": "^1.9.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "tsx": "^4.23.0",
+    "typescript": "^6.0.3"
+  }
+}
